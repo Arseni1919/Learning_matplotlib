@@ -1,66 +1,22 @@
+import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
-import time
-import random
-import asyncio
 
+x = np.random.randint(low=1, high=11, size=50)
+y = x + np.random.randint(1, 5, size=x.size)
+data = np.column_stack((x, y))
 
-fig = plt.figure()
-ax1 = fig.add_subplot(1, 1, 1)
+fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2,
+                               figsize=(8, 4))
 
+ax1.scatter(x=x, y=y, marker='o', c='r', edgecolor='b')
+ax1.set_title('Scatter: $x$ versus $y$')
+ax1.set_xlabel('$x$')
+ax1.set_ylabel('$y$')
 
-class My_data:
-    dataArray = []
+ax2.hist(data, bins=np.arange(data.min(), data.max()),
+         label=('x', 'y'))
+ax2.legend(loc=(0.65, 0.8))
+ax2.set_title('Frequencies of $x$ and $y$')
+ax2.yaxis.tick_right()
 
-my_data = My_data()
-my_data.dataArray = [i for i in range(50)]
-print(my_data.dataArray)
-
-def animate(i):
-    print(my_data.dataArray)
-    xar = []
-    yar = []
-    for item in my_data.dataArray:
-        if item > 1:
-            x, y = item, random.randint(0, 10)
-            xar.append(x)
-            yar.append(y)
-    print(my_data.dataArray, xar, yar)
-    if i < 3:
-        ax1.clear()
-        ax1.plot(xar, yar)
-    else:
-        plt.close()
-
-
-async def plotting():
-    ani = animation.FuncAnimation(fig, animate, interval=1000)
-    print('before show')
-    # await plt.show()
-    for i in range(3):
-        await asyncio.sleep(1)
-    print('after show')
-
-
-async def plot_things():
-    print(f'inside plot_things')
-    await asyncio.sleep(1)
-    await plotting()
-
-
-async def change_length():
-    print('inside change_length')
-    for i in range(3):
-        if i % 2:
-            my_data.dataArray = [i in range(5)]
-        else:
-            my_data.dataArray = [i in range(10)]
-        await asyncio.sleep(1)
-        print(f'iteration {i} in change_length')
-
-
-async def main():
-    await asyncio.gather(plot_things(), change_length())
-
-if __name__ == '__main__':
-    asyncio.run(main())
+plt.show()
