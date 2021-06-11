@@ -13,7 +13,6 @@ but skillfully commanding the remaining 98% of the library can be daunting.
 ## The construction
 
 ![](static/plot_objects.png)
-<img src="static/e1.png" alt="drawing" width="400"/>
 
 ## Examples
 
