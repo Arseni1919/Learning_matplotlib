@@ -18,7 +18,8 @@ but skillfully commanding the remaining 98% of the library can be daunting.
 
 ### Example 1 - `example1.py`
 
-![](static/e1.png)
+<!-- ![](static/e1.png) -->
+<img src="static/e1.png" alt="drawing" width="200"/>
 
 ### Example 2 - `example2.py`
 
