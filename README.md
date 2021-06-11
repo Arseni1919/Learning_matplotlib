@@ -13,6 +13,7 @@ but skillfully commanding the remaining 98% of the library can be daunting.
 ## The construction
 
 ![](static/plot_objects.png)
+<img src="static/e1.png" alt="drawing" width="400"/>
 
 ## Examples
 
@@ -23,11 +24,13 @@ but skillfully commanding the remaining 98% of the library can be daunting.
 
 ### Example 2 - `example2.py`
 
-![](static/e2.png)
+<!-- ![](static/e2.png) -->
+<img src="static/e2.png" alt="drawing" width="400"/>
 
 ### Example 3 - `plot_live_2.py`
 
-![](static/e3.gif)
+<!-- ![](static/e3.gif) -->
+<img src="static/e3.gif" alt="drawing" width="400"/>
 
 ## Credits
 
