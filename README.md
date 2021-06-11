@@ -26,7 +26,9 @@ but skillfully commanding the remaining 98% of the library can be daunting.
 <!-- ![](static/e2.png) -->
 <img src="static/e2.png" alt="drawing" width="400"/>
 
-### Example 3 - `plot_live_2.py`
+### Example 3 - Plotting During The Run
+
+Plot live examples in `plot_live_1.py` and `plot_live_2.py`.
 
 <!-- ![](static/e3.gif) -->
 <img src="static/e3.gif" alt="drawing" width="400"/>
