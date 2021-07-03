@@ -41,8 +41,8 @@ You need to plug `plt.rcParams["figure.figsize"] = [6.4, 6.4]` before plotting.
 
 ## Credits
 
-- [plot live - 1](https://stackoverflow.com/questions/28269157/plotting-in-a-non-blocking-way-with-matplotlib)
-- [plot live - 2](https://stackoverflow.com/questions/11874767/how-do-i-plot-in-real-time-in-a-while-loop-using-matplotlib)
+- [plot live - stackoverflow 1](https://stackoverflow.com/questions/28269157/plotting-in-a-non-blocking-way-with-matplotlib)
+- [plot live - stackoverflow 2](https://stackoverflow.com/questions/11874767/how-do-i-plot-in-real-time-in-a-while-loop-using-matplotlib)
 - [clr - clear figure](https://stackoverflow.com/questions/8213522/when-to-use-cla-clf-or-close-for-clearing-a-plot-in-matplotlib)
 - [Live Updating Graphs with Matplotlib Tutorial](https://pythonprogramming.net/python-matplotlib-live-updating-graphs/)
 - [Real Python Tutorial - Python Plotting With Matplotlib (Guide)](https://realpython.com/python-matplotlib-guide/)
