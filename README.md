@@ -28,7 +28,25 @@ but skillfully commanding the remaining 98% of the library can be daunting.
 
 ### Example 3 - Plotting During The Run
 
-Plot live examples in [`plot_live_1.py`](plot_live_1.py) and [`plot_live_2.py`](plot_live_2.py).
+Plot live examples in [`plot_live_1.py`](plot_live_1.py), [`plot_live_2.py`](plot_live_2.py) and [`plot_live_3.py`](plot_live_3.py).
+
+```python
+PLOT_LIVE = True
+if PLOT_LIVE:
+    fig, _ = plt.subplots(nrows=2, ncols=3, figsize=(12, 6))
+
+
+def plot(self, graph_dict):
+    if PLOT_LIVE:
+        ax = self.fig.get_axes()
+        for indx, (k, v) in enumerate(graph_dict.items()):
+            ax[indx].cla()
+            ax[indx].plot(list(range(len(v))), v, c='r')  # , edgecolor='b')
+            ax[indx].set_title(f'Plot: {k}')
+            ax[indx].set_xlabel('iters')
+            ax[indx].set_ylabel(f'{k}')
+        plt.pause(0.05)
+```
 
 <!-- ![](static/e3.gif) -->
 <img src="static/e3.gif" alt="drawing" width="400"/>
