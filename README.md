@@ -16,22 +16,28 @@ but skillfully commanding the remaining 98% of the library can be daunting.
 
 ## Examples
 
-### Example 1 - `example1.py`
+### Example 1 - [`example1.py`](example1.py)
 
 <!-- ![](static/e1.png) -->
 <img src="static/e1.png" alt="drawing" width="400"/>
 
-### Example 2 - `example2.py`
+### Example 2 - [`example2.py`](example2.py)
 
 <!-- ![](static/e2.png) -->
 <img src="static/e2.png" alt="drawing" width="400"/>
 
 ### Example 3 - Plotting During The Run
 
-Plot live examples in `plot_live_1.py` and `plot_live_2.py`.
+Plot live examples in [`plot_live_1.py`](plot_live_1.py) and [`plot_live_2.py`](plot_live_2.py).
 
 <!-- ![](static/e3.gif) -->
 <img src="static/e3.gif" alt="drawing" width="400"/>
+
+### Tricks
+
+#### Change `figsize` in `plt` mode
+
+You need to plug `plt.rcParams["figure.figsize"] = [6.4, 6.4]` before plotting.
 
 ## Credits
 
