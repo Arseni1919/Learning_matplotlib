@@ -51,6 +51,11 @@ def plot(self, graph_dict):
 <!-- ![](static/e3.gif) -->
 <img src="static/e3.gif" alt="drawing" width="400"/>
 
+#### Another Option for Life Plotting
+
+```python
+from drawnow import drawnow
+```
 ### Tricks
 
 #### Change `figsize` in `plt` mode
