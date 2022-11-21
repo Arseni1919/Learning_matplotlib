@@ -58,6 +58,8 @@ bprev.on_clicked(callback.prev)
 plt.show()
 ```
 
+![](static/buttons.png)
+
 ## Examples
 
 ### Example 1 - [`example1.py`](example1.py)
