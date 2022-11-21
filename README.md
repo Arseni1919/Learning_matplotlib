@@ -58,7 +58,8 @@ bprev.on_clicked(callback.prev)
 plt.show()
 ```
 
-![](static/buttons.png)
+<!-- ![](static/buttons.png) -->
+<img src="static/buttons.png" alt="drawing" width="400"/>
 
 ## Examples
 
